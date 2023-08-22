@@ -32,7 +32,7 @@ function makeBubble() {
 
 
 function timer() {
-  let time = 10;
+  let time = 60;
 
   let timeint = setInterval(function() {
 
