@@ -1,7 +1,7 @@
 let rn = 0;
 let scores = 0;
 let audio = document.getElementById("audio");
-let gif = `<img src="/images/sinchan2.gif" alt="">`
+let gif = `<img src="./images/sinchan2.gif" alt="">`
 let elem = document.getElementById("panel-bottom")
 console.log(elem);
 function hitNumber() {
