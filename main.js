@@ -1,7 +1,9 @@
 let rn = 0;
 let scores = 0;
 let audio = document.getElementById("audio");
-
+let gif = `<img src="/images/sinchan2.gif" alt="">`
+let elem = document.getElementById("panel-bottom")
+console.log(elem);
 function hitNumber() {
 
   rn = Math.floor(Math.random() * 10)
@@ -30,7 +32,7 @@ function makeBubble() {
 
 
 function timer() {
-  let time = 60;
+  let time = 10;
 
   let timeint = setInterval(function() {
 
@@ -39,8 +41,10 @@ function timer() {
 
     }
     else if (time === 0) {
-      document.getElementById("panel-bottom").innerHTML = `<h1>Game Over Brooo</h1><h2>Your score is ${scores} </h2>`
-
+      document.getElementById("panel-bottom").innerHTML = `<h1>Game Over Brooo</h1><h2>Your score is ${scores} </h2> <br>
+      ${gif}
+      `
+      elem.style.flexDirection = "column"
       clearInterval(timeint);
 
 
